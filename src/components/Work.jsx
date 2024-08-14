@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { faded } from "../Faded.jsx";
+import chinchin from "../assets/chinchin.jpeg";
 
 const Work = () => {
   return (
@@ -62,7 +63,7 @@ const Work = () => {
               {/* placeholder img  */}
               {/* img */}
               <img
-                src="/chinchin.jpeg"
+                src={chinchin}
                 className="object-cover group-hover:scale-150 transition-all duration-500 w-[520px] h-[455px]"
                 alt="i3"
               />

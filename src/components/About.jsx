@@ -1,37 +1,43 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { faded } from "../Faded.jsx";
+import html from "../assets/html-5.png";
+import css from "../assets/css-3.png";
+import tailwind from "../assets/tailwind.svg";
+import react from "../assets/react.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import sass from "../assets/sass.png";
 
 const About = () => {
   const technologies = [
     {
       name: "HTML",
-      icon: "/html-5.png",
+      icon: html,
       description: "Markup language for structuring web content.",
     },
     {
       name: "CSS",
-      icon: "/css-3.png",
+      icon: css,
       description: "Styling language for designing web pages.",
     },
     {
       name: "Tailwind",
-      icon: "/tailwind.svg",
+      icon: tailwind,
       description: "Utility-first CSS framework for rapid UI development.",
     },
     {
       name: "React",
-      icon: "/react.svg",
+      icon: react,
       description: "JavaScript library for building user interfaces.",
     },
     {
       name: "Bootstrap",
-      icon: "/bootstrap.svg",
+      icon: bootstrap,
       description: "Popular CSS framework for responsive design.",
     },
     {
       name: "Sass",
-      icon: "/sass.png",
+      icon: sass,
       description: "CSS preprocessor for more efficient styling.",
     },
   ];
@@ -72,7 +78,7 @@ const About = () => {
                   alt={tech.name}
                   className="w-16 h-16 mb-4 mx-auto text-green-400"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-center">
+                <h3 className="text-xl text-green-400 font-semibold mb-2 text-center">
                   {tech.name}
                 </h3>
                 <p className="text-gray-400 text-center">{tech.description}</p>
